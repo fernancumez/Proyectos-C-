@@ -1,0 +1,25 @@
+
+//Llamada de una funcion
+
+#include <iostream>
+using namespace std; 
+
+// Funcion: llamada 
+int llamada (int x, int y) { 
+	cout << "Estamos en la funcion!!" << endl; 
+	return (x+y);
+}
+
+int main() { // Estos comentarios son propios de C++ 
+	cout << "Vamos a llamar a la funcion.." << endl;
+	// Llamamos a la funcion // Llamamos a una funcion y asignamos 
+	int z = llamada(5,7); 
+	cout << "Resultado 1: " << z << endl;
+	// Llamada desde el output 
+	cout << "Resultado 2: " << llamada(6,7) << endl; 
+	cout << "Programa terminado \n" << endl;
+	system("pause");
+	return 0;
+}
+
+

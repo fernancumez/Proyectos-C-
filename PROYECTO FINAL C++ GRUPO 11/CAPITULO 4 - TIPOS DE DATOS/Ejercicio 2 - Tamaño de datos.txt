@@ -1,0 +1,22 @@
+/*Ejercicio 1: Determine el tamaño de todos 
+los tipos de datos en c++*/
+
+#include <iostream>
+#include <locale>
+
+using namespace std;
+
+int main () {
+	setlocale(LC_ALL, "spanish");
+
+	// Sacamos el tamaÃ±o de cada tipo
+	cout << "El tamaño del int es:\t\t" << sizeof(int) << " bytes.\n";
+	cout << "El tamaño del short es:\t" << sizeof(short) << " bytes.\n";
+	cout << "El tamaño del long es:\t" << sizeof(long) << " bytes.\n";
+	cout << "El tamaño del char es:\t\t" << sizeof(char) << " bytes.\n";
+	cout << "El tamaño del float es:\t\t" << sizeof(float) << " bytes.\n";
+	cout << "El tamaño del double es:\t" << sizeof(double) << " bytes.\n";
+	// Sacamos por salida standar un mensaje
+	cout << "Termino el programa\n";
+	return 0;
+}

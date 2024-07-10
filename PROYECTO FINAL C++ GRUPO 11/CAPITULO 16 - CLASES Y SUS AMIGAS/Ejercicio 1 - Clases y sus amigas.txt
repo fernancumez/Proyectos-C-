@@ -1,0 +1,41 @@
+
+#include<iostream>
+
+using namespace std;
+
+clas myclass{
+    private:
+        int n, d;
+    public:
+        myclass (int i, int j){ n = i; d = j;}
+        //Declara una funcion amiga de myclass
+        friend int isfactor(myclass ob);
+}
+
+int isfactor(myclass ob){
+    if(!(ob.n%ob.d)){
+        return 1;
+    }
+    else{}
+        return 0;
+    }
+}
+
+int main(){
+    myclass ob1(10,2),ob2(13,3);
+    if(isfactor(ob1)){
+        cout<<"2 en un factor de 10\n";
+    }
+    else{
+        cout<<"2 no es un factor de 10\n";
+    }
+
+    if(isfactor(ob2)){
+        cout<<"3 es un factor de 13\n";
+    }
+    else{
+        cout<<"3 no es un factor de 13\n";
+        char ch=getch();
+        return 0;
+    }
+}

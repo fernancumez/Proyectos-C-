@@ -1,0 +1,17 @@
+
+//Suma y multiplicacion de dos numeros
+
+#include<iostream>
+
+using namespace std; 
+
+int main() {
+	int x = 5; int y = 7;
+	cout << endl << "NUM 1: " << x << endl;
+	cout << "NUM 2: " << y << endl << endl;
+
+	cout << "SUMA: " << x + y << endl;
+	cout << "MULTIPLICACION: " << x * y << endl;
+	system("pause");
+	return 0;
+}

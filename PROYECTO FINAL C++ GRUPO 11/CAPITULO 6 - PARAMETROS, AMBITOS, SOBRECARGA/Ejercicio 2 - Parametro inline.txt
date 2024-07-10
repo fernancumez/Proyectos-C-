@@ -1,0 +1,19 @@
+/**
+* Calcula
+* parametros: double a, double b
+* devuelve double
+* En la implementacion no hace falta volver a poner INLINE
+*/
+double Calcula (double a, double b) {
+a *= 35462;
+b *=32546 + a;
+return (a / b) * variable;
+}
+/**
+* Log
+* parametros: char *mensaje
+* devuelve void
+*/
+void Log (char *mensaje) {
+cout << PROGRAMA << mensaje << endl;
+}

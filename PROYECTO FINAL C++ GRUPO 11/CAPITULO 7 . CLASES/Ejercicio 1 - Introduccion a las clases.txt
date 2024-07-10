@@ -1,0 +1,31 @@
+ /*
+	Ejercicio 1. Introduccion a alas clases
+*/
+
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+class persona{
+	private:
+		string nombre;
+	public:
+		persona(int, string);
+		void correr();	
+};
+	
+persona::persona(int _edad, string _nombre){
+	nombre = _nombre;
+}
+	
+void persona::correr(){
+	cout << "Soy "<<nombre << " y estoy corriendo" << endl;
+}	
+
+int main(){
+	persona p1 = persona(20, "fernando");
+	p1.correr();
+	
+	return 0;
+}

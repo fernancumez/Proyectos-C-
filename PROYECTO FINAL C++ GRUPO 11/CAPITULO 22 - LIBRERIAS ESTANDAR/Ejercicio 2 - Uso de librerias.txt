@@ -1,0 +1,12 @@
+#include <stdlib.h>
+#include <iostream>
+
+using namesapace std;
+
+int main(){
+	cout<<"Se va a generar un numero aleatorio"<<endl;
+	cout<<"El numero generado es: ";
+    cout<<rand();    //Se genera el numero con rand y se muestra en pantalla
+
+	retun 0;
+}

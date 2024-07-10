@@ -1,0 +1,62 @@
+#include <iostream>
+#include <assert.h> //para poder usar assert()
+using namespace std;
+
+
+template <class Array> 
+class MyArray {
+public:
+	MyArray(int size){
+		data_ = new Array[size];
+		cap_ = size;
+		used_ = 0;
+	}
+	~MyArray() {
+		delete []data_;
+	}
+
+	void AddValue(int value) {
+		if (cap_ == used_) {
+			int *new_data = new int[cap_ * 2];
+			for (int i = 0; i < cap_; i++) {
+				new_data[i] = data_[i];
+			}
+			new_data[used_] = value;
+			delete [] data_;
+			data_ = new_data;
+			cap_ *= 2;
+		}
+		data_[used_] = value;
+		used_++;
+	}
+
+	void SetValue(int pos, int value) {
+		data_[pos] = value;
+	}
+
+	int GetValue(int pos) {
+		return data_[pos];
+	}
+
+	int GetSize() {
+		return used_;
+	}
+
+protected:
+	Array *data_;
+	int cap_, used_;
+};
+
+int main(int argc, char **argv) {
+	MyArray<int> array(1);
+	int value;
+	
+	while ((cin >> value)) {
+		array.AddValue(value);
+	}
+
+	for(int i = array.GetSize() - 1; i >= 0; i--)
+		cout << array.GetValue(i) << endl;
+
+	return 0;
+}

@@ -1,0 +1,15 @@
+/*Ejercicio 2. Definicion de constantes
+en c++*/
+
+using namespace std;
+#include <iostream>
+
+int main () {
+	int y = 0;
+	// Definimos el valor constante
+	const float PI = 3.1416;
+	cout << "El valor de PI es: " << PI << endl;
+	// Sacamos por salida standar un mensaje
+	cout << "\nTermino el programa" << endl;
+	return 0;
+}

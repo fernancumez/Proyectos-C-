@@ -1,0 +1,27 @@
+//Demostracion de los comandos try, throw y catch
+
+#include<iostream>
+
+using namespace std;
+
+//funcion: main
+//Recibe: void
+//Devuelve: int
+//En la funcion principal se trataran los comandos try, throw y catch
+
+int main(void){
+	try{  //se intenta hacer el siguiente codigo
+
+		//Aqui puede ir mas codigo
+		throw 125;  //aunque directamente en este caso se lanza una excepcion
+
+	}
+	catch(int){   //se captura con un catch de enteros (podria unsarse long o char, por 	ejemplo)
+        
+        cout<<"ha surgido una excepcion de tipo entero"<<endl; //y muestra por pantalla
+	}
+
+	cin.get();   //y el programa finaliza
+
+	return 0;
+}

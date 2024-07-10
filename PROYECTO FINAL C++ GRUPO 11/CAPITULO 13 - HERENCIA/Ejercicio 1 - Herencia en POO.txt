@@ -1,0 +1,61 @@
+
+//Herencia en POO
+
+#include<iostream>
+#include<locale>
+
+using namespace std;
+
+class Persona{
+	private:	//Atributos
+		int edad;
+		string nombre;
+	public:	//Metodos
+		Persona(int , string);	//Constructor de la clase padre
+		void MostrarPersona();
+};
+
+class Alumno : public Persona{
+	private:	//Atributos
+		string carne;
+		float notafinal;
+	public:	//Metodos
+		Alumno(int, string, string, float);	//Constructor de la clase hija
+		void MostrarAlumno();	
+};
+
+Persona::Persona(int _edad, string _nombre){	//Inicializacion del constructor
+	edad = _edad;
+	nombre = _nombre;
+}
+
+Alumno::Alumno(int _edad, string _nombre, string _carne, float _notafinal) : Persona(_edad, _nombre){
+	carne = _carne;
+	notafinal = _notafinal;
+}
+
+void Persona::MostrarPersona(){
+	cout<<"Edad: "<<edad<<endl;
+	cout<<"Nombre: "<<nombre<<endl;
+}
+
+void Alumno::MostrarAlumno(){
+	MostrarPersona();
+	cout<<"Carné: "<<carne<<endl;
+	cout<<"Nota final: "<<notafinal<<endl;
+}
+
+
+int main(){
+	setlocale(LC_ALL, "spanish");
+	system("color f0");
+	
+	Alumno p1(18, "fernando cúmez", "1990-18-12101", 15.6);
+	p1.MostrarAlumno();	
+	
+	cout<<endl;
+	Alumno p2(23, "andrew garfield", "1990-15-34224", 34.3);
+	p2.MostrarAlumno();
+		
+	return 0;
+}

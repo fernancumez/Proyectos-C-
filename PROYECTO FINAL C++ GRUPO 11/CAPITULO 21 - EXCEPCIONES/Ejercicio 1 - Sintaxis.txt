@@ -1,0 +1,12 @@
+//codigo previo..
+
+try{
+	//bloque de codigo a comprobar
+}
+catch(tipo){    //Ha ocurrido un suceso en el ty que se ha terminado
+	            //la ejecucion del bloque y catch recoge y analiza lo sucedido	
+
+	//bloque de codiogo que analiza lo que ha lanzado el try
+}
+
+//Codigo posterior...

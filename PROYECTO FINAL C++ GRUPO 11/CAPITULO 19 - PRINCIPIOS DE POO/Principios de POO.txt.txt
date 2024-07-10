@@ -1,0 +1,4 @@
+//En esta leccion no se realizo codigo algún
+ya que se explica que requerimientos se necesita para 
+poder comprender este gran ambito dentro de la programacion orientada a objetos.
+Es por ende que en posteriores capitulos si se complementaran con los codigos necesarios para su comprension.

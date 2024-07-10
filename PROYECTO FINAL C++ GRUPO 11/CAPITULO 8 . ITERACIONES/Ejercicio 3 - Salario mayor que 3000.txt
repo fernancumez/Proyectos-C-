@@ -1,0 +1,34 @@
+/*1. Realice un programa que determine la 
+cantidad de empleados que ganan mas de 3000
+y los que ganan menos de esa cantidad*/
+
+//ENTRADA DE DATOS
+
+#include<iostream>	//LIBRERIAS DE C++
+
+using namespace std;
+
+int main() {	//FUNCION PRINCIPAL
+	int cant, mayor = 0, menor = 0;
+	float salario;
+
+	cout << "Digite el numero de empleados: "; cin >> cant;
+
+	for (int i = 0; i < cant; i++) {
+		cout << "Digite el salario del empleado " << i + 1 << ": ";
+		cin >> salario;
+
+		if (salario > 3000) {
+			mayor++;
+		}
+		else {
+			menor++;
+		}
+	}
+
+	cout << endl << mayor << " empleados ganan mas de 3000" << endl;
+	cout << menor << " empleados ganan menos que 3000" << endl;
+	system("pause");
+
+	return 0;	//RETORNAR UN VALOR
+}

@@ -1,0 +1,33 @@
+
+//Probando operadores en if else anidado
+
+#include <iostream>
+
+using namespace std; 
+int main() {
+	// Sacamos por salida standar un mensaje 
+	cout << "Vamos a probar los operadores\n";
+	unsigned int test = 0; int a = 23, b = 21, c = 34;
+	// Veamos el resto de valores 
+	cout << "Valores: " << c << " " << b << " " << a << endl;
+	// Veamos una sentencia if-else sencilla 
+	if (a >= b) 
+		cout << "a mayor o igual que b" << endl;
+	else cout << "a menor que b" << endl;
+	// Veamos una sentencia if-else compleja 
+	// nota: si dentro de un if o un else metemos mas de una sentencia, hay que meter LLAVES 
+	// y tambien conviene meter las llaves para hacer un codigo menos confuso 
+	if (a >= b) { 
+		cout << "a mayor o igual que b" << endl; 
+		if (a == 23) { 
+			cout << "a igual que 23" << endl; 
+			cout << "terminamos." << endl; 
+		} 
+	} 
+	else { 
+		cout << "a menor que b" << endl; 
+	}
+
+	system("pause");
+	return 0;
+}

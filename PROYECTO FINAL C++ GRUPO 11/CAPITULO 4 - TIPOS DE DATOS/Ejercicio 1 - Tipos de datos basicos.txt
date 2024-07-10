@@ -1,0 +1,25 @@
+
+//Tipos de datos basicos en c++
+
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int entero = 15;
+	float flotante = 34.43;
+	double mayor = 24.5354;
+	long mucho = LONG_MAX;
+	char letra = 'a';
+	string cadena = "hola mundo";
+
+	cout << "VALOR ENTERO: " << entero << endl;
+	cout << "VALOR FLOTANTE: " << flotante << endl;
+	cout << "VALOR DOUBLE: " << mayor << endl;
+	cout << "VALOR LONG: " << mucho << endl;
+	cout << "VALOR CARACTER: " << letra << endl;
+	cout << "VALOR CADENA: " << cadena << endl;
+	system("pause");
+
+	return 0;
+}

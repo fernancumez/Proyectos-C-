@@ -1,0 +1,5 @@
+#define identificador_de_macro <secuencia>
+#undef identificador_de_macro
+#ifndef NULL 
+#define NULL 0L 
+#endif

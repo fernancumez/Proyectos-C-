@@ -1,0 +1,19 @@
+//Directivas #if, #elif, #else y #endif
+
+#if expresión-constante-1 
+<sección-1> 
+#elif <expresión-constante-2> 
+<sección-2> 
+.
+.
+.
+#elif <expresión-constante-n> 
+<sección-n> 
+<#else> 
+<sección-final> 
+#endif
+
+
+//Directivas #ifdef e #ifndef
+#ifdef <identificador>
+#ifndef <identificador>

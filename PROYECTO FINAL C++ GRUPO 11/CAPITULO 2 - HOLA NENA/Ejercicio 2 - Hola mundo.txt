@@ -1,0 +1,14 @@
+
+//SALIDA DE DATOS
+//HOLA NENA
+
+#include<iostream>	//LIBRERIAS DE C++
+
+using namespace std;
+
+int main() {	//FUNCION PRINCIPAL
+		
+	cout << "HOLA MUNDO" << endl;	//SALIDA DE DATOS EN CONSOLA
+
+	return 0;	//RETORNAR UN VALOR
+}

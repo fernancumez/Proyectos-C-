@@ -1,0 +1,17 @@
+//demostracion: try, throw y catch
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	try{
+		throw 125;
+	}
+	catch(...){
+		cout<<"Ha ocurrido un error inesperado"<<endl;
+	}
+
+	cin.get();
+	return 0;
+}
