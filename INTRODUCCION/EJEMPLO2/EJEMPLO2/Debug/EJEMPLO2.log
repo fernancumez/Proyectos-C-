@@ -1,0 +1,14 @@
+﻿  EJEMPLO2.cpp
+c:\users\fernando cúmez\desktop\programas c++\ejemplo2\ejemplo2\ejemplo2.cpp(26): warning C4305: 'argumento': truncamiento de 'int' a '_Elem'
+          with
+          [
+              _Elem=char
+          ]
+c:\users\fernando cúmez\desktop\programas c++\ejemplo2\ejemplo2\ejemplo2.cpp(26): warning C4309: 'argumento': truncamiento de valor constante
+c:\users\fernando cúmez\desktop\programas c++\ejemplo2\ejemplo2\ejemplo2.cpp(28): warning C4305: 'argumento': truncamiento de 'int' a '_Elem'
+          with
+          [
+              _Elem=char
+          ]
+c:\users\fernando cúmez\desktop\programas c++\ejemplo2\ejemplo2\ejemplo2.cpp(28): warning C4309: 'argumento': truncamiento de valor constante
+  EJEMPLO2.vcxproj -> C:\Users\Fernando Cúmez\Desktop\PROGRAMAS C++\EJEMPLO2\Debug\EJEMPLO2.exe
